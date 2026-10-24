@@ -591,7 +591,7 @@ def staff_login():
     st.text_input("Work email", value=STAFF_PEOPLE[role][1], key=f"login_email_{role}")
     st.text_input("Password", value="password", type="password", key="login_pw")
     st.text_input("One-time code sent to your phone", value="736201", key="login_otp")
-    html('<p class="muted">Prototype: the details are filled in so the marker can sign in.</p>')
+    html('<p class="muted">Prototype: the details are filled in so click on the sign in.</p>')
     st.button("Sign in", type="primary", on_click=staff_sign_in)
 
 
